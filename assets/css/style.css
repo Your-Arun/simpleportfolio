@@ -118,7 +118,10 @@ html {
 }
 
 body {
-  background-color: var(--space-cadet);
+  background:
+    radial-gradient(circle at 10% 20%, hsl(225, 62%, 20%) 0%, transparent 45%),
+    radial-gradient(circle at 80% 10%, hsl(240, 56%, 18%) 0%, transparent 40%),
+    linear-gradient(160deg, hsl(241, 35%, 14%) 0%, hsl(231, 42%, 12%) 100%);
   color: var(--cadet-blue-crayola);
   font-size: 1.6rem;
   line-height: 1.6;
@@ -153,12 +156,19 @@ body {
   max-width: max-content;
   padding: var(--padding, 10px 40px);
   border-radius: 50px;
-  transition: var(--transition-2);
+  border: 1px solid transparent;
+  transition: transform var(--transition-2), box-shadow var(--transition-2), background-color var(--transition-2), border-color var(--transition-2);
 }
 
-.btn-primary.blue { background-color: var(--klein-blue); }
+.btn-primary.blue {
+  background: linear-gradient(135deg, var(--bluetiful), var(--klein-blue));
+  box-shadow: 0 12px 24px hsla(230, 80%, 39%, 0.35);
+}
 
-.btn-primary.blue:is(:hover, :focus) { background-color: var(--orange-soda); }
+.btn-primary.blue:is(:hover, :focus) {
+  background: linear-gradient(135deg, var(--orange-soda), hsl(15, 95%, 56%));
+  transform: translateY(-2px);
+}
 
 .img-cover {
   width: 100%;
@@ -202,9 +212,11 @@ body {
   position: fixed;
   padding-block: 15px;
   width: 100%;
-  background-color: var(--space-cadet);
+  background-color: hsla(242, 35%, 18%, 0.72);
+  backdrop-filter: blur(12px);
   height: 65px;
-  box-shadow: var(--shadow);
+  box-shadow: 0 10px 30px hsla(0, 0%, 0%, 0.25);
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.08);
   overflow: hidden;
   transition: 0.25s var(--cubic-out);
   z-index: 4;
@@ -285,15 +297,26 @@ body {
   min-height: 100vh;
   display: grid;
   place-items: center;
+  position: relative;
+  isolation: isolate;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(120deg, hsla(237, 47%, 13%, 0.86), hsla(231, 56%, 15%, 0.72));
 }
 
 .hero-banner {
   width: 150px;
   height: 172px;
-  background-color: var(--independence);
+  background-color: hsl(226, 24%, 22%);
   border-radius: var(--radius-10);
   margin-inline: auto;
   margin-block-end: 30px;
+  box-shadow: 0 18px 40px hsla(0, 0%, 0%, 0.35);
 }
 
 .hero-banner img { border-radius: inherit; }
@@ -341,9 +364,10 @@ body {
 .about { padding-block-start: 120px; }
 
 .about-banner {
-  background-color: var(--independence);
+  background-color: hsl(226, 24%, 22%);
   border-radius: var(--radius-10);
   margin-block-end: 30px;
+  box-shadow: 0 16px 32px hsla(0, 0%, 0%, 0.28);
 }
 
 .about-banner > .img-cover { border-radius: inherit; }
@@ -366,11 +390,11 @@ body {
 
 .portfolio-list {
   display: grid;
-  gap: 60px;
+  gap: 28px;
 }
 
 .portfolio-card {
-  background-color: var(--independence);
+  background-color: hsl(226, 24%, 22%);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -379,7 +403,30 @@ body {
   font-family: var(--ff-barlow);
   color: var(--white);
   font-weight: var(--fw-600);
-  transition: var(--transition-2);
+  position: relative;
+  overflow: hidden;
+  border: 1px solid hsla(0, 0%, 100%, 0.12);
+  box-shadow: 0 12px 24px hsla(0, 0%, 0%, 0.25);
+  transition: transform var(--transition-2), box-shadow var(--transition-2), border-color var(--transition-2);
+}
+
+.portfolio-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(20deg, hsla(238, 47%, 10%, 0.92) 25%, hsla(235, 40%, 15%, 0.58) 100%);
+}
+
+.portfolio-card .card-content {
+  position: relative;
+  z-index: 1;
+  max-width: 42ch;
+}
+
+.portfolio-card:is(:hover, :focus-within) {
+  transform: translateY(-6px);
+  box-shadow: 0 22px 42px hsla(0, 0%, 0%, 0.35);
+  border-color: hsla(196, 84%, 63%, 0.5);
 }
 
 .portfolio-list > li:nth-child(even) .card-content { margin-inline-start: auto; }
@@ -391,7 +438,15 @@ body {
 
 .portfolio-card .card-title {
   max-width: 20ch;
-  margin-block-end: 20px;
+  margin-block-end: 14px;
+}
+
+.portfolio-card .card-subtitle:last-of-type {
+  margin-block-end: 16px;
+  color: hsl(0, 0%, 90%);
+  font-size: 1.45rem;
+  font-weight: 500;
+  line-height: 1.55;
 }
 
 .portfolio-card .btn-link {
@@ -424,6 +479,13 @@ body {
   gap: 25px;
 }
 
+.skills-item {
+  background: linear-gradient(120deg, hsla(226, 25%, 22%, 0.82), hsla(233, 24%, 20%, 0.82));
+  border: 1px solid hsla(0, 0%, 100%, 0.08);
+  border-radius: var(--radius-10);
+  padding: 16px 18px;
+}
+
 .skills-item .wrapper {
   display: flex;
   justify-content: space-between;
@@ -440,13 +502,13 @@ body {
 }
 
 .skills-progress-box {
-  background-color: var(--white);
+  background-color: hsla(0, 0%, 100%, 0.18);
   height: 8px;
   border-radius: var(--radius-10);
 }
 
 .skills-progress {
-  background-color: var(--orange-soda);
+  background: linear-gradient(90deg, var(--orange-soda), hsl(27, 100%, 62%));
   height: 100%;
   border-radius: inherit;
 }
@@ -460,9 +522,11 @@ body {
 \*-----------------------------------*/
 
 .contact-card {
-  background-color: var(--midnight-blue);
+  background: linear-gradient(140deg, hsla(230, 68%, 22%, 0.92), hsla(233, 56%, 19%, 0.92));
   padding: 50px 25px;
   border-radius: var(--radius-20);
+  border: 1px solid hsla(0, 0%, 100%, 0.12);
+  box-shadow: 0 20px 45px hsla(0, 0%, 0%, 0.32);
 }
 
 .contact-card .card-subtitle {
@@ -480,15 +544,22 @@ body {
 .contact-form { margin-block-end: 50px; }
 
 .contact-input {
-  background-color: var(--white);
-  color: var(--manatee);
+  background-color: hsla(0, 0%, 100%, 0.95);
+  color: hsl(240, 7%, 20%);
   border-radius: var(--radius-5);
   padding: 15px 25px;
   font-size: var(--fs-5);
   margin-block-end: 15px;
+  border: 1px solid transparent;
+  transition: border-color var(--transition-2), box-shadow var(--transition-2);
 }
 
 .contact-input::placeholder { color: inherit; }
+
+.contact-input:focus {
+  border-color: var(--vivid-sky-blue);
+  box-shadow: 0 0 0 3px hsla(196, 84%, 63%, 0.25);
+}
 
 textarea.contact-input {
   resize: vertical;
@@ -498,7 +569,7 @@ textarea.contact-input {
 }
 
 .btn-submit {
-  background-color: var(--orange-soda);
+  background: linear-gradient(135deg, var(--orange-soda), hsl(15, 95%, 56%));
   color: var(--white);
   font-family: var(--ff-barlow);
   font-size: var(--fs-5);
@@ -511,6 +582,7 @@ textarea.contact-input {
 .btn-submit:is(:hover, :focus) {
   background-color: var(--white);
   color: var(--black);
+  transform: translateY(-2px);
 }
 
 .contact-item {
@@ -522,7 +594,7 @@ textarea.contact-input {
 .contact-item:not(:last-child) { margin-block-end: 20px; }
 
 .contact-icon {
-  background-color: var(--glaucous);
+  background: linear-gradient(135deg, var(--bluetiful), var(--glaucous));
   font-size: 2.4rem;
   padding: 20px;
   border-radius: 50%;
@@ -600,8 +672,9 @@ textarea.contact-input {
 \*-----------------------------------*/
 
 .footer {
-  background-color: var(--independence);
+  background: linear-gradient(180deg, hsla(232, 20%, 17%, 0.96), hsla(235, 20%, 13%, 0.96));
   padding-block: 60px;
+  border-top: 1px solid hsla(0, 0%, 100%, 0.1);
 }
 
 .copyright {
