@@ -8,106 +8,72 @@
   <title>Arun - Personal Portfolio</title>
   <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./assets/css/style.css">
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Open+Sans:wght@400;500;700&family=Poppins:wght@400;600&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body id="top">
 
-  <!-- 
-    - #HEADER
-  -->
+  <!-- Ambient background glow elements -->
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+  <div class="glow-orb orb-3"></div>
 
+  <!-- Header -->
   <header class="header" data-header>
     <div class="container">
 
-      <a href="#">
-        <h1 class="logo">PortFolio</h1>
+      <a href="#" class="logo-link">
+        <h1 class="logo">Arun<span class="dot">.</span></h1>
       </a>
 
       <button class="nav-toggle-btn" aria-label="Toggle Menu" data-nav-toggle-btn>
-        <ion-icon name="menu-outline" class="menu-icon"></ion-icon>
-        <ion-icon name="close-outline" class="close-icon"></ion-icon>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
       </button>
 
-      <nav class="navbar container">
+      <nav class="navbar" data-navbar>
         <ul class="navbar-list">
-
           <li>
-            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+            <a href="#home" class="navbar-link active-link" data-nav-link>Home</a>
           </li>
-
           <li>
             <a href="#about" class="navbar-link" data-nav-link>About</a>
           </li>
-
           <li>
             <a href="#portfolio" class="navbar-link" data-nav-link>Portfolio</a>
           </li>
-
           <li>
             <a href="#skills" class="navbar-link" data-nav-link>Skills</a>
           </li>
-
           <li>
             <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
           </li>
-
-         
-
           <li>
-            <a href="https://drive.google.com/file/d/1nEirBVmYUeORbZ4RSnOgaR1HrBRJfq7_/view?usp=sharing" target="_blank" class="btn btn-primary">Download CV</a>
+            <a href="https://drive.google.com/file/d/1nEirBVmYUeORbZ4RSnOgaR1HrBRJfq7_/view?usp=sharing" target="_blank" class="btn btn-download-cv">Download CV</a>
           </li>
-
         </ul>
       </nav>
 
     </div>
   </header>
 
-
-
-
-
   <main>
     <article>
 
-      <!-- 
-        - #HERO
-      -->
-
-      <section class="hero" id="home">
+      <!-- Hero -->
+      <section class="hero reveal" id="home">
         <div class="container">
 
-          <div class="hero-banner">
-
-             <img src="./assets/images/logophoto.jpg" width="800" height="864" loading="lazy" alt="Ethan's Photo"
-              class="img-cover">
-
-            <div class="elem elem-1">
-              <p class="elem-title">1+ </p>
-              <p class="elem-text">Years of Experience</p>
-            </div>
-
-            <div class="elem elem-2">
-              <p class="elem-title">10+</p>
-
-              <p class="elem-text">Projects Completed</p>
-            </div>
-
-            <div class="elem elem-3">
-              <ion-icon name="trophy"></ion-icon>
-            </div>
-
-          </div>
-
           <div class="hero-content">
-
+            <span class="hero-subtitle">MERN Stack & React Native Developer</span>
+            
             <h2 class="hero-title">
-              <span>Hello I'm</span>
-              <strong>Arun Kumar</strong> MERN Stack & React Native Developer
+              Hello, I'm <br>
+              <strong class="gradient-text">Arun Kumar</strong>
             </h2>
 
             <p class="hero-text">
@@ -115,345 +81,210 @@
             </p>
 
             <div class="btn-group">
-              <a href="#contact" class="btn btn-primary blue">Get a Quote</a>
+              <a href="#contact" class="btn btn-primary">Get a Quote</a>
+              <a href="#about" class="btn btn-secondary">About Me</a>
+            </div>
+          </div>
 
-              <a href="#about" class="btn">About Me</a>
+          <div class="hero-banner">
+            <div class="avatar-frame">
+              <img src="./assets/images/logophoto.jpg" width="800" height="864" loading="lazy" alt="Arun Kumar's Photo" class="img-cover">
             </div>
 
+            <div class="elem elem-1 float-animation-1">
+              <div class="elem-badge">
+                <span class="elem-title">1+</span>
+                <span class="elem-text">Years of Experience</span>
+              </div>
+            </div>
+
+            <div class="elem elem-2 float-animation-2">
+              <div class="elem-badge">
+                <span class="elem-title">10+</span>
+                <span class="elem-text">Projects Completed</span>
+              </div>
+            </div>
+
+            <div class="elem elem-3 float-animation-3">
+              <div class="badge-icon-wrap">
+                <ion-icon name="trophy"></ion-icon>
+              </div>
+            </div>
+            
+            <div class="glow-avatar-glow"></div>
           </div>
 
         </div>
       </section>
 
-
-
-
-
-      <!-- 
-        - #ABOUT
-      -->
-
-      <section class="section about" id="about">
+      <!-- About -->
+      <section class="section about reveal" id="about">
         <div class="container">
 
-          <figure class="about-banner">
+          <div class="about-banner-container">
+            <figure class="about-banner">
+              <img src="./assets/images/about-logo.png" width="800" height="652" loading="lazy" alt="Arun's Workspace" class="img-cover main-about-img">
+              <img src="./assets/images/absolute-image.jpg" width="800" height="717" loading="lazy" alt="Arun Kumar" class="abs-img">
+            </figure>
 
-            <img src="./assets/images/about-logo.png" width="800" height="652" loading="lazy" alt="Arun's Photo"
-              class="img-cover">
-
-            <img src="./assets/images/absolute-image.jpg" width="800" height="717" loading="lazy" alt="Arun's Photo"
-              class="abs-img">
-
-            <div class="abs-icon abs-icon-1">
+            <div class="abs-icon abs-icon-1 bounce-animation-1" title="CSS3">
               <ion-icon name="logo-css3"></ion-icon>
             </div>
 
-            <div class="abs-icon abs-icon-2">
+            <div class="abs-icon abs-icon-2 bounce-animation-2" title="JavaScript">
               <ion-icon name="logo-javascript"></ion-icon>
             </div>
 
-            <div class="abs-icon abs-icon-3">
+            <div class="abs-icon abs-icon-3 bounce-animation-3" title="React">
               <ion-icon name="logo-react"></ion-icon>
             </div>
-
-          </figure>
+          </div>
 
           <div class="about-content">
+            <p class="section-subtitle text-left">Get To Know Me</p>
+            <h2 class="h2 section-title text-left">Developing Web & Mobile Solutions That Make an Impact</h2>
 
-            <p class="section-subtitle">I'm a Developer</p>
-
-            <h2 class="h2 section-title">I Develop Web Application that Help People</h2>
-
-            <p class="section-text">
-              MERN Stack & React Native Developer with 1+ years of experience building full-stack web and mobile applications. Proficient in React.js, React Native, Node.js, Express.js, and MongoDB. I've built real-world systems including a logistics management platform, a real-time feedback portal with Socket.io, and a mobile billing app - all deployed in production.
+            <p class="section-text text-left">
+              I am a MERN Stack & React Native Developer with 1+ years of experience crafting high-performance web and mobile applications. Proficient in React.js, React Native, Node.js, Express.js, and MongoDB. I've designed and deployed real-world systems including logistics management platforms, real-time feedback portals with Socket.io, and mobile billing systems.
             </p>
+            
+            <div class="about-stats-grid">
+              <div class="about-stat-item">
+                <ion-icon name="code-slash-outline" class="stat-icon"></ion-icon>
+                <h3>Clean Code</h3>
+                <p>Readable & scalable structure</p>
+              </div>
+              <div class="about-stat-item">
+                <ion-icon name="phone-portrait-outline" class="stat-icon"></ion-icon>
+                <h3>Cross-Platform</h3>
+                <p>iOS, Android & Web deployment</p>
+              </div>
+            </div>
 
-            <a href="#portfolio" class="btn btn-primary blue">View Portfolio</a>
-
+            <a href="#portfolio" class="btn btn-primary">View My Work</a>
           </div>
 
         </div>
       </section>
 
-
-
-
-
-      <!-- 
-        - #PORTFOLIO
-      -->
-
-      <section class="section portfolio" id="portfolio">
+      <!-- Portfolio -->
+      <section class="section portfolio reveal" id="portfolio">
         <div class="container">
 
-          <p class="section-subtitle">Portfolio</p>
-
-          <h2 class="h2 section-title">My Amazing Works</h2>
-
+          <p class="section-subtitle">My Creative Works</p>
+          <h2 class="h2 section-title">Featured Projects</h2>
           <p class="section-text">
-            I’m trying to manage my portfolio. </p>
+            A curated selection of logistics portals, mobile billing applications, and real-time platforms.
+          </p>
 
-<ul class="portfolio-list">
+          <div class="filter-wrapper">
+            <div class="filter-controls">
+              <button class="filter-btn active" data-filter="all">All Projects</button>
+              <button class="filter-btn" data-filter="mern">MERN Stack</button>
+              <button class="filter-btn" data-filter="native">React Native</button>
+              <button class="filter-btn" data-filter="react">React.js</button>
+            </div>
+          </div>
 
-  <li>
-    <a href="https://github.com/Your-Arun" target="_blank"
-       class="portfolio-card"
-       style="background-image: url('./portfolio-tenant.jpg')">
-      <div class="card-content">
-        <p class="card-subtitle">MERN Stack + React Native</p>
-        <h3 class="h3 card-title">
-          BranchFlow Pro - Logistics & Branch Management
-        </h3>
-        <p class="card-subtitle">Multi-branch operations, role-based access, and centralized logistics tracking.</p>
-        <span class="btn-link">
-          <span>Sanghi Brothers</span>
-          <ion-icon name="arrow-forward"></ion-icon>
-        </span>
-      </div>
-    </a>
-  </li>
+          <ul class="portfolio-list">
 
-  <li>
-    <a href="https://feedback-qr-l1ak.onrender.com/" target="_blank"
-       class="portfolio-card"
-       style="background-image: url('./portfolio-feedback.jpg')">
-      <div class="card-content">
-        <p class="card-subtitle">React + Socket.io</p>
-        <h3 class="h3 card-title">
-          Feedback & Complaint Management System
-        </h3>
-        <p class="card-subtitle">Real-time issue tracking with QR-based submission and Socket.io live updates.</p>
-        <span class="btn-link">
-          <span>Sanghi Brothers</span>
-          <ion-icon name="arrow-forward"></ion-icon>
-        </span>
-      </div>
-    </a>
-  </li>
-
-  <li>
-    <a href="https://github.com/Your-Arun" target="_blank"
-       class="portfolio-card"
-       style="background-image: url('./portfolio-urban.jpg')">
-      <div class="card-content">
-        <p class="card-subtitle">React Native + Expo</p>
-        <h3 class="h3 card-title">
-          Electricity Billing & Tenant Management App
-        </h3>
-        <p class="card-subtitle">Mobile-first billing, tenant records, and monthly payment management workflows.</p>
-        <span class="btn-link">
-          <span>Sanghi Brothers</span>
-          <ion-icon name="arrow-forward"></ion-icon>
-        </span>
-      </div>
-    </a>
-  </li>
-
-  <li>
-    <a href="https://urban-estate.onrender.com/" target="_blank"
-       class="portfolio-card"
-       style="background-image: url('./portfolio-others.jpg')">
-      <div class="card-content">
-        <p class="card-subtitle">MERN Stack</p>
-        <h3 class="h3 card-title">
-          Urban Estate - Real Estate Platform
-        </h3>
-        <p class="card-subtitle">Property listing, filtering, and lead capture with full MERN architecture.</p>
-        <span class="btn-link">
-          <span>Personal Project</span>
-          <ion-icon name="arrow-forward"></ion-icon>
-        </span>
-      </div>
-    </a>
-  </li>
-
-  <li>
-    <a href="https://hotstarrclone.netlify.app/" target="_blank"
-       class="portfolio-card"
-       style="background-image: url('./portfolio-urban.jpg')">
-      <div class="card-content">
-        <p class="card-subtitle">React.js</p>
-        <h3 class="h3 card-title">
-          Hotstar Clone - Streaming Platform
-        </h3>
-        <p class="card-subtitle">Responsive React UI with category-wise browsing and modern media UX patterns.</p>
-        <span class="btn-link">
-          <span>Personal Project</span>
-          <ion-icon name="arrow-forward"></ion-icon>
-        </span>
-      </div>
-    </a>
-  </li>
-
-</ul>
-
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #SKILLS
-      -->
-
-      <section class="section skills" id="skills">
-        <div class="container">
-
-          <p class="section-subtitle">My Skills</p>
-
-          <h2 class="h2 section-title">I Develop Skills Regularly</h2>
-
-          <p class="section-text">
-           </p>
-
-          <ul class="skills-list">
-
-            <li class="skills-item">
-              <div class="wrapper" style="width: 95%">
-                <h3 class=" skills-title">HTML</h3>
-
-                <data class="skills-data" value="95">95%</data>
-              </div>
-
-              <div class="skills-progress-box">
-                <div class="skills-progress" style="width: 95%"></div>
+            <li class="portfolio-item-wrap" data-category="mern native">
+              <div class="portfolio-card" style="background-image: url('./portfolio-tenant.jpg')">
+                <div class="card-glass-overlay"></div>
+                <div class="card-content">
+                  <span class="card-subtitle-pill">MERN Stack + React Native</span>
+                  <h3 class="h3 card-title">BranchFlow Pro - Logistics & Branch Management</h3>
+                  <p class="card-description">
+                    Multi-branch operations, role-based access, and centralized logistics tracking. Deployed for real-world usage.
+                  </p>
+                  <div class="card-meta">
+                    <span class="client-name">Sanghi Brothers</span>
+                    <a href="https://github.com/Your-Arun" target="_blank" class="card-link" aria-label="View Project Source">
+                      <span>View Source</span>
+                      <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                    </a>
+                  </div>
+                </div>
               </div>
             </li>
 
-            <li class="skills-item">
-              <div class="wrapper" style="width: 85%">
-                <h3 class="skills-title">CSS</h3>
-
-                <data class="skills-data" value="85">85%</data>
-              </div>
-
-              <div class="skills-progress-box">
-                <div class="skills-progress" style="width: 85%"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="wrapper" style="width: 80%">
-                <h3 class="skills-title">JavaScript</h3>
-
-                <data class="skills-data" value="80">80%</data>
-              </div>
-
-              <div class="skills-progress-box">
-                <div class="skills-progress" style="width: 80%"></div>
+            <li class="portfolio-item-wrap" data-category="react">
+              <div class="portfolio-card" style="background-image: url('./portfolio-feedback.jpg')">
+                <div class="card-glass-overlay"></div>
+                <div class="card-content">
+                  <span class="card-subtitle-pill">React + Socket.io</span>
+                  <h3 class="h3 card-title">Feedback & Complaint Management System</h3>
+                  <p class="card-description">
+                    Real-time issue tracking with QR-based submission and Socket.io live updates. Allows rapid response loops.
+                  </p>
+                  <div class="card-meta">
+                    <span class="client-name">Sanghi Brothers</span>
+                    <a href="https://feedback-qr-l1ak.onrender.com/" target="_blank" class="card-link" aria-label="Live Demo">
+                      <span>Live Demo</span>
+                      <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                    </a>
+                  </div>
+                </div>
               </div>
             </li>
 
-            <li class="skills-item">
-              <div class="wrapper" style="width: 80%">
-                <h3 class="skills-title">React.js</h3>
-
-                <data class="skills-data" value="80">80%</data>
-              </div>
-
-              <div class="skills-progress-box">
-                <div class="skills-progress" style="width: 80%"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="wrapper" style="width: 75%">
-                <h3 class="skills-title">React Native</h3>
-
-                <data class="skills-data" value="75">75%</data>
-              </div>
-
-              <div class="skills-progress-box">
-                <div class="skills-progress" style="width: 75%"></div>
+            <li class="portfolio-item-wrap" data-category="native">
+              <div class="portfolio-card" style="background-image: url('./portfolio-urban.jpg')">
+                <div class="card-glass-overlay"></div>
+                <div class="card-content">
+                  <span class="card-subtitle-pill">React Native + Expo</span>
+                  <h3 class="h3 card-title">Electricity Billing & Tenant Management App</h3>
+                  <p class="card-description">
+                    Mobile-first billing, tenant records, and monthly payment management workflows. Deployed on site.
+                  </p>
+                  <div class="card-meta">
+                    <span class="client-name">Sanghi Brothers</span>
+                    <a href="https://github.com/Your-Arun" target="_blank" class="card-link" aria-label="View Project Source">
+                      <span>View Source</span>
+                      <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                    </a>
+                  </div>
+                </div>
               </div>
             </li>
 
-            <li class="skills-item">
-              <div class="wrapper" style="width: 75%">
-                <h3 class="skills-title">Node.js / Express.js</h3>
-
-                <data class="skills-data" value="75">75%</data>
-              </div>
-
-              <div class="skills-progress-box">
-                <div class="skills-progress" style="width: 75%"></div>
-              </div>
-            </li>
-
-            
-
-            <li class="skills-item">
-              <div class="wrapper" style="width: 70%">
-                <h3 class="skills-title">MongoDB</h3>
-
-                <data class="skills-data" value="70">70%</data>
-              </div>
-
-              <div class="skills-progress-box">
-                <div class="skills-progress" style="width: 70%"></div>
+            <li class="portfolio-item-wrap" data-category="mern">
+              <div class="portfolio-card" style="background-image: url('./portfolio-others.jpg')">
+                <div class="card-glass-overlay"></div>
+                <div class="card-content">
+                  <span class="card-subtitle-pill">MERN Stack</span>
+                  <h3 class="h3 card-title">Urban Estate - Real Estate Platform</h3>
+                  <p class="card-description">
+                    Property listing, custom search filtering, and lead capture systems with modular MERN backend.
+                  </p>
+                  <div class="card-meta">
+                    <span class="client-name">Personal Project</span>
+                    <a href="https://urban-estate.onrender.com/" target="_blank" class="card-link" aria-label="Live Demo">
+                      <span>Live Demo</span>
+                      <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                    </a>
+                  </div>
+                </div>
               </div>
             </li>
 
-            <li class="skills-item">
-              <div class="wrapper" style="width: 85%">
-                <h3 class="skills-title">Tailwind CSS</h3>
-
-                <data class="skills-data" value="85">85%</data>
-              </div>
-
-              <div class="skills-progress-box">
-                <div class="skills-progress" style="width: 85%"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="wrapper" style="width: 65%">
-                <h3 class="skills-title">Socket.io</h3>
-
-                <data class="skills-data" value="65">65%</data>
-              </div>
-
-              <div class="skills-progress-box">
-                <div class="skills-progress" style="width: 65%"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="wrapper" style="width: 75%">
-                <h3 class="skills-title">Bootstrap</h3>
-
-                <data class="skills-data" value="75">75%</data>
-              </div>
-
-              <div class="skills-progress-box">
-                <div class="skills-progress" style="width: 75%"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="wrapper" style="width: 70%">
-                <h3 class="skills-title">WordPress</h3>
-
-                <data class="skills-data" value="70">70%</data>
-              </div>
-
-              <div class="skills-progress-box">
-                <div class="skills-progress" style="width: 70%"></div>
-              </div>
-            </li>
-
-            <li class="skills-item">
-              <div class="wrapper" style="width: 80%">
-                <h3 class="skills-title">Git / GitHub</h3>
-
-                <data class="skills-data" value="80">80%</data>
-              </div>
-
-              <div class="skills-progress-box">
-                <div class="skills-progress" style="width: 80%"></div>
+            <li class="portfolio-item-wrap" data-category="react">
+              <div class="portfolio-card" style="background-image: url('./portfolio-urban.jpg')">
+                <div class="card-glass-overlay"></div>
+                <div class="card-content">
+                  <span class="card-subtitle-pill">React.js</span>
+                  <h3 class="h3 card-title">Hotstar Clone - Streaming Platform</h3>
+                  <p class="card-description">
+                    Responsive React UI with category-wise browsing and modern media player UX design patterns.
+                  </p>
+                  <div class="card-meta">
+                    <span class="client-name">Personal Project</span>
+                    <a href="https://hotstarrclone.netlify.app/" target="_blank" class="card-link" aria-label="Live Demo">
+                      <span>Live Demo</span>
+                      <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+                    </a>
+                  </div>
+                </div>
               </div>
             </li>
 
@@ -462,115 +293,124 @@
         </div>
       </section>
 
-
-
-
-
-      <!-- 
-        - #CONTACT
-      -->
-
-      <section class="section contact" id="contact">
+      <!-- Skills -->
+      <section class="section skills reveal" id="skills">
         <div class="container">
 
-          <div class="contact-card">
+          <p class="section-subtitle">Proficiencies</p>
+          <h2 class="h2 section-title">My Tech Stack</h2>
+          <p class="section-text">
+            Technologies and frameworks I use to bring modern mobile and web apps to life.
+          </p>
 
-            <p class="card-subtitle">Don't be shy</p>
+          <div class="skills-grid">
 
-            <h2 class="h2 section-title">Drop Me a Line</h2>
+            <div class="skill-card html-card">
+              <div class="skill-header">
+                <div class="skill-icon"><ion-icon name="logo-html5"></ion-icon></div>
+                <span class="skill-percentage">95%</span>
+              </div>
+              <h3 class="skill-name">HTML5</h3>
+              <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
+            </div>
 
-            <div class="wrapper">
+            <div class="skill-card css-card">
+              <div class="skill-header">
+                <div class="skill-icon"><ion-icon name="logo-css3"></ion-icon></div>
+                <span class="skill-percentage">85%</span>
+              </div>
+              <h3 class="skill-name">CSS3</h3>
+              <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+            </div>
 
-              <form action="https://formspree.io/f/xkgwezbv" target="_blank" method="POST" class="contact-form">
+            <div class="skill-card js-card">
+              <div class="skill-header">
+                <div class="skill-icon"><ion-icon name="logo-javascript"></ion-icon></div>
+                <span class="skill-percentage">80%</span>
+              </div>
+              <h3 class="skill-name">JavaScript</h3>
+              <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+            </div>
 
-               <label><input type="text" name="name" placeholder="Name" required class="contact-input"></label>
+            <div class="skill-card react-card">
+              <div class="skill-header">
+                <div class="skill-icon"><ion-icon name="logo-react"></ion-icon></div>
+                <span class="skill-percentage">80%</span>
+              </div>
+              <h3 class="skill-name">React.js</h3>
+              <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+            </div>
 
-                <label><input type="email" name="email" placeholder="Email" required class="contact-input"></label>
+            <div class="skill-card native-card">
+              <div class="skill-header">
+                <div class="skill-icon"><ion-icon name="logo-react"></ion-icon></div>
+                <span class="skill-percentage">75%</span>
+              </div>
+              <h3 class="skill-name">React Native</h3>
+              <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+            </div>
 
-                <label><textarea name="message" placeholder="Message" required class="contact-input"></textarea></label>
+            <div class="skill-card node-card">
+              <div class="skill-header">
+                <div class="skill-icon"><ion-icon name="logo-nodejs" class="nodejs-icon-color"></ion-icon></div>
+                <span class="skill-percentage">75%</span>
+              </div>
+              <h3 class="skill-name">Node / Express</h3>
+              <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+            </div>
 
-                <button type="submit" class="btn-submit">Submit Message</button>
+            <div class="skill-card mongo-card">
+              <div class="skill-header">
+                <div class="skill-icon"><ion-icon name="server-outline"></ion-icon></div>
+                <span class="skill-percentage">70%</span>
+              </div>
+              <h3 class="skill-name">MongoDB</h3>
+              <div class="skill-bar"><div class="skill-progress" style="width: 70%"></div></div>
+            </div>
 
-              </form>
+            <div class="skill-card tailwind-card">
+              <div class="skill-header">
+                <div class="skill-icon"><ion-icon name="color-palette-outline"></ion-icon></div>
+                <span class="skill-percentage">85%</span>
+              </div>
+              <h3 class="skill-name">Tailwind CSS</h3>
+              <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+            </div>
 
-              <ul class="contact-list">
+            <div class="skill-card socket-card">
+              <div class="skill-header">
+                <div class="skill-icon"><ion-icon name="pulse-outline"></ion-icon></div>
+                <span class="skill-percentage">65%</span>
+              </div>
+              <h3 class="skill-name">Socket.io</h3>
+              <div class="skill-bar"><div class="skill-progress" style="width: 65%"></div></div>
+            </div>
 
-                <li class="contact-item">
+            <div class="skill-card bootstrap-card">
+              <div class="skill-header">
+                <div class="skill-icon"><ion-icon name="grid-outline"></ion-icon></div>
+                <span class="skill-percentage">75%</span>
+              </div>
+              <h3 class="skill-name">Bootstrap</h3>
+              <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+            </div>
 
-                  <div class="contact-icon">
-                    <ion-icon name="location"></ion-icon>
-                  </div>
+            <div class="skill-card wp-card">
+              <div class="skill-header">
+                <div class="skill-icon"><ion-icon name="logo-wordpress"></ion-icon></div>
+                <span class="skill-percentage">70%</span>
+              </div>
+              <h3 class="skill-name">WordPress</h3>
+              <div class="skill-bar"><div class="skill-progress" style="width: 70%"></div></div>
+            </div>
 
-                  <div>
-                    <h3 class="contact-item-title">Address</h3>
-
-                    <address class="contact-item-link">
-                      Jodhpur, Rajasthan
-                    </address>
-                  </div>
-
-                </li>
-
-                <li class="contact-item">
-
-                  <div class="contact-icon">
-                    <ion-icon name="mail"></ion-icon>
-                  </div>
-
-                  <div>
-                    <h3 class="contact-item-title">Email</h3>
-
-                    <a href="mailto:arun.work82@gmail.com" class="contact-item-link">arun.work82@gmail.com</a>
-                  </div>
-
-                </li>
-
-                <li class="contact-item">
-
-                  <div class="contact-icon">
-                    <ion-icon name="call"></ion-icon>
-                  </div>
-
-                  <div>
-                    <h3 class="contact-item-title">Phone</h3>
-
-                    <a href="tel:+919588093562" class="contact-item-link">+91-9588093562</a>
-                  </div>
-
-                 
-
-                </li>
-
-                <li class="contact-item">
-                  <div class="contact-icon">
-                    <ion-icon name="logo-linkedin"></ion-icon>
-                  </div>
-                  <div>
-                    <a href="https://www.linkedin.com/in/urarun/" class="contact-item-link"><h3 class="contact-item-title">LinkedIn</h3></a>
-                  </div>
-                </li>
-
-                <li class="contact-item">
-                  <div class="contact-icon">
-                    <ion-icon name="logo-github"></ion-icon>
-                  </div>
-                  <div>
-                    <a href="https://github.com/Your-Arun" class="contact-item-link"><h3 class="contact-item-title">GitHub</h3></a>
-                  </div>
-                </li>
-
-                <li class="contact-item">
-                  <div class="contact-icon">
-                    <ion-icon name="globe-outline"></ion-icon>
-                  </div>
-                  <div>
-                    <a href="https://your-arun.github.io/simpleportfolio/" class="contact-item-link"><h3 class="contact-item-title">Portfolio</h3></a>
-                  </div>
-                </li>
-          
-
-              </ul>
-
+            <div class="skill-card git-card">
+              <div class="skill-header">
+                <div class="skill-icon"><ion-icon name="logo-github"></ion-icon></div>
+                <span class="skill-percentage">80%</span>
+              </div>
+              <h3 class="skill-name">Git / GitHub</h3>
+              <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
             </div>
 
           </div>
@@ -578,21 +418,101 @@
         </div>
       </section>
 
+      <!-- Contact -->
+      <section class="section contact reveal" id="contact">
+        <div class="container">
 
+          <div class="contact-card-layout">
+            
+            <div class="contact-info-panel">
+              <p class="info-subtitle">Get In Touch</p>
+              <h2 class="h2 info-title">Let's Connect & Work Together</h2>
+              <p class="info-desc">
+                Feel free to reach out for MERN Stack or React Native contract opportunities, full-time jobs, or project inquiries.
+              </p>
 
+              <ul class="contact-details-list">
+                
+                <li class="contact-detail-item">
+                  <div class="detail-icon"><ion-icon name="location-outline"></ion-icon></div>
+                  <div class="detail-content">
+                    <span class="detail-label">Address</span>
+                    <address class="detail-value">Jodhpur, Rajasthan</address>
+                  </div>
+                </li>
 
-   
+                <li class="contact-detail-item">
+                  <div class="detail-icon"><ion-icon name="mail-outline"></ion-icon></div>
+                  <div class="detail-content">
+                    <span class="detail-label">Email</span>
+                    <a href="mailto:arun.work82@gmail.com" class="detail-value link-hover">arun.work82@gmail.com</a>
+                  </div>
+                </li>
+
+                <li class="contact-detail-item">
+                  <div class="detail-icon"><ion-icon name="call-outline"></ion-icon></div>
+                  <div class="detail-content">
+                    <span class="detail-label">Phone</span>
+                    <a href="tel:+919588093562" class="detail-value link-hover">+91-9588093562</a>
+                  </div>
+                </li>
+                
+              </ul>
+
+              <div class="social-links-container">
+                <a href="https://www.linkedin.com/in/urarun/" target="_blank" class="social-btn linkedin" aria-label="LinkedIn Profile">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+                <a href="https://github.com/Your-Arun" target="_blank" class="social-btn github" aria-label="GitHub Profile">
+                  <ion-icon name="logo-github"></ion-icon>
+                </a>
+                <a href="https://your-arun.github.io/simpleportfolio/" target="_blank" class="social-btn globe" aria-label="Personal Portfolio">
+                  <ion-icon name="globe-outline"></ion-icon>
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-form-panel">
+              <form action="https://formspree.io/f/xkgwezbv" target="_blank" method="POST" class="contact-form">
+                
+                <div class="form-row">
+                  <div class="input-group">
+                    <input type="text" name="name" id="name" required class="contact-input" placeholder=" ">
+                    <label for="name" class="input-label">Your Name</label>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="input-group">
+                    <input type="email" name="email" id="email" required class="contact-input" placeholder=" ">
+                    <label for="email" class="input-label">Your Email</label>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="input-group">
+                    <textarea name="message" id="message" required class="contact-input" placeholder=" "></textarea>
+                    <label for="message" class="input-label">Your Message</label>
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-submit-form">
+                  <span>Send Message</span>
+                  <ion-icon name="paper-plane-outline"></ion-icon>
+                </button>
+
+              </form>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
     </article>
   </main>
 
-
-
-
-
-  <!-- 
-    - #FOOTER
-  -->
-
+  <!-- Footer -->
   <footer class="footer">
     <div class="container">
 
@@ -604,7 +524,6 @@
         <li>
           <a href="#" class="footer-link">Terms & Condition</a>
         </li>
-
         <li>
           <a href="#" class="footer-link">Privacy Policy</a>
         </li>
@@ -613,28 +532,14 @@
     </div>
   </footer>
 
+  <!-- Back to top button -->
+  <a href="#top" class="back-to-top" data-back-to-top aria-label="Back to Top">
+    <span class="back-to-top-text">UP</span>
+    <ion-icon name="chevron-up-outline"></ion-icon>
+  </a>
 
-
-
-
-  <!-- 
-    - #BACK TO TOP
-  -->
-
-  <a href="#top" class="back-to-top" data-back-to-top>BACK TOP</a>
-
-
-
-
-
-  <!-- 
-    - custom js link
-  -->
+  <!-- Scripts -->
   <script src="./assets/js/script.js"></script>
-
-  <!-- 
-    - ionicon link
-  -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
