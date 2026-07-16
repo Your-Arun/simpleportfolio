@@ -453,6 +453,19 @@ body.nav-active {
   }
 }
 
+.header-cv-btn {
+  margin-inline-start: auto;
+  margin-inline-end: 15px;
+  padding: 6px 14px;
+  font-size: var(--fs-xs);
+}
+
+@media (min-width: 992px) {
+  .header-cv-btn {
+    display: none;
+  }
+}
+
 @media (min-width: 992px) {
   .nav-toggle-btn { display: none; }
   
@@ -758,6 +771,7 @@ body.nav-active {
 }
 
 .about-banner-container {
+  display: none;
   position: relative;
   width: 280px;
   height: 250px;
@@ -883,6 +897,7 @@ body.nav-active {
 
 @media (min-width: 768px) {
   .about-banner-container {
+    display: block;
     width: 380px;
     height: 320px;
   }
