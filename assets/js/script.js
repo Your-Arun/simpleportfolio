@@ -32,7 +32,7 @@ window.addEventListener("scroll", () => {
     header.classList.remove("active");
     backTopBtn.classList.remove("active");
   }
-});
+}, { passive: true });
 
 // Portfolio category sorting
 const filterBtns = document.querySelectorAll(".filter-btn");
