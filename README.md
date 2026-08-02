@@ -1,84 +1,74 @@
-# Arun Kumar - Personal Portfolio
+# 🚀 Arun Kumar - MERN Stack & React Native Developer
 
-A modern personal portfolio website showcasing my profile, skills, and featured projects.
+**1.5+ Years Production Experience | Startup-Ready Software Engineer**
 
-Live site: [https://your-arun.github.io/simpleportfolio/](https://your-arun.github.io/simpleportfolio/)
+Building production-ready web and mobile applications for startups. Specialized in real-time systems, scalable backends, and cross-platform mobile deployment.
 
-## Overview
+- **Open to**: Full-time startup roles, contract MERN work, immediate joining
+- **Location**: Jodhpur (Open to Remote or Relocation — Bangalore preferred)
+- **Live Portfolio**: [https://your-arun.github.io/simpleportfolio/](https://your-arun.github.io/simpleportfolio/)
 
-This portfolio presents:
-- Hero introduction with experience and project stats
-- About section with technical summary
-- Project portfolio with live/demo links
-- Skills with progress indicators
-- Contact section with direct profile links
+---
 
-## Tech Stack
+## 🏢 Production Experience & History
 
-- HTML5
-- CSS3
-- JavaScript (Vanilla)
-- Ionicons
+### **Sanghi Brothers (2023 - 2025)**
+*Dual Role: MERN Stack Developer + System/Automation Specialist*
 
-## Featured Projects
+- **BranchFlow Pro**: Multi-branch logistics platform handling 100+ daily transactions with 5+ RBAC permission levels.
+- **Feedback & Complaint Management System**: Real-time Socket.io WebSockets portal with QR code submission. **Reduced issue response time from 2 hours → 10 minutes** (40% submission boost).
+- **Electricity Billing Mobile App**: Cross-platform React Native app compiled & deployed to iOS & Android via EAS Build for 100+ tenant units.
 
-1. **BranchFlow Pro - Logistics & Branch Management**  
-   MERN Stack + React Native project for multi-branch operations and logistics tracking.
+---
 
-2. **Feedback & Complaint Management System**  
-   React + Socket.io app for real-time issue reporting and updates.
+## 🛠️ Technical Proficiencies
 
-3. **Electricity Billing & Tenant Management App**  
-   React Native + Expo mobile app for billing workflows and tenant records.
+- **Frontend Development**: React.js (Hooks, Redux, Context API), React Native + Expo (EAS Build), Next.js 16+ (App Router, SSR), Tailwind CSS, Bootstrap, JavaScript ES6+, Responsive Design
+- **Backend Development**: Node.js, Express.js, RESTful API design, Socket.io / WebSocket real-time systems, JWT Auth, Middleware patterns
+- **Database & Cloud**: MongoDB & MongoDB Atlas Cloud, Firebase Realtime DB & Storage, Query Optimization & Indexing
+- **Deployment & Infrastructure**: Vercel, Netlify, Render, EAS Build (Expo), GitHub Actions awareness
+- **Tools & DevOps Workflow**: Git, GitHub, Postman API Testing, npm/yarn, VS Code CLI
 
-4. **Urban Estate - Real Estate Platform**  
-   MERN Stack web platform for property listing and lead management.
+---
 
-5. **Hotstar Clone - Streaming Platform**  
-   React.js project focused on responsive UI and media-style browsing.
+## 📂 Featured Projects
 
-## Contact
+1. **NoteBook - Secure Digital Note-Taking Platform**  
+   `Next.js 16 • React 19 • MongoDB • Vercel`  
+   Modern SaaS-style note-taking app with JWT auth, email OTP password reset, <800ms load time & 100% uptime.  
+   🔗 [Live Demo](https://ur-notebook.vercel.app/) | 📄 [GitHub Repo](https://github.com/Your-Arun/Notebook---Keep-Your-Notes)
 
-- **Location:** Jodhpur, Rajasthan
-- **Email:** [arun.work82@gmail.com](mailto:arun.work82@gmail.com)
-- **Phone:** [+91-9588093562](tel:+919588093562)
-- **LinkedIn:** [https://www.linkedin.com/in/urarun/](https://www.linkedin.com/in/urarun/)
-- **GitHub:** [https://github.com/Your-Arun](https://github.com/Your-Arun)
-- **Portfolio:** [https://your-arun.github.io/simpleportfolio/](https://your-arun.github.io/simpleportfolio/)
+2. **BranchFlow Pro - Multi-Branch Logistics Platform**  
+   `MERN Stack • Socket.io • Render • RBAC` (Sanghi Brothers Production)  
+   Multi-branch logistics tracking with role-based access, central inventory logs, and 100+ daily shipments.  
+   🔗 [GitHub Profile](https://github.com/Your-Arun)
 
-## Resume
+3. **Feedback & Complaint Management System**  
+   `React • Socket.io • Node.js • Render • QR Integration` (Sanghi Brothers Production)  
+   QR scan-to-submit workflow with Socket.io WebSockets for 50+ concurrent users.  
+   🔗 [Live Demo](https://feedback-qr-l1ak.onrender.com/) | 📄 [GitHub Profile](https://github.com/Your-Arun)
 
-- Download CV: [Google Drive Link](https://drive.google.com/file/d/1cECD_rTc-Z5fozeH-eKHjQ-DpD2BGcCI/view?usp=sharing)
+4. **Electricity Billing & Tenant Management App**  
+   `React Native • Expo • EAS Build` (Sanghi Brothers Production)  
+   Mobile-first billing app compiled via EAS Build for 100+ tenant units (30% faster billing).  
+   🔗 [GitHub Profile](https://github.com/Your-Arun)
 
-## Run Locally
+5. **Urban Estate - Full-Stack Real Estate Platform**  
+   `MERN Stack • MongoDB Atlas • Render`  
+   Property listing catalog with multi-filter search queries, agent lead capture & <1s query response.  
+   🔗 [Live Demo](https://urban-estate.onrender.com/) | 📄 [GitHub Profile](https://github.com/Your-Arun)
 
-Since this is a static website, you can run it directly:
+6. **Hotstar Clone - Responsive Streaming Platform UI**  
+   `React.js • TMDB API • Netlify`  
+   High-fidelity video streaming interface with TMDB API integration & responsive mobile UX.  
+   🔗 [Live Demo](https://hotstarrclone.netlify.app/) | 📄 [GitHub Profile](https://github.com/Your-Arun)
 
-1. Clone the repository
-   ```bash
-   git clone https://github.com/Your-Arun/simpleportfolio.git
-   ```
-2. Open the project folder
-3. Open `index.html` in your browser
+---
 
-## Project Structure
+## 📬 Contact Information
 
-```text
-simpleportfolio/
-├── index.html
-├── README.md
-└── assets/
-    ├── css/
-    │   └── style.css
-    ├── js/
-    │   └── script.js
-    └── images/
-```
-
-## License
-
-This project is for personal portfolio use.
-# simpleportfolio
-
-
-Link:https://your-arun.github.io/simpleportfolio/
+- **Email**: [arun.work82@gmail.com](mailto:arun.work82@gmail.com)
+- **Phone**: [+91-9588093562](tel:+919588093562)
+- **LinkedIn**: [https://www.linkedin.com/in/urarun/](https://www.linkedin.com/in/urarun/)
+- **GitHub**: [https://github.com/Your-Arun](https://github.com/Your-Arun)
+- **Portfolio**: [https://your-arun.github.io/simpleportfolio/](https://your-arun.github.io/simpleportfolio/)
