@@ -180,6 +180,7 @@
           <div class="filter-wrapper">
             <div class="filter-controls">
               <button class="filter-btn active" data-filter="all">All Projects</button>
+              <button class="filter-btn" data-filter="next">Next.js</button>
               <button class="filter-btn" data-filter="mern">MERN Stack</button>
               <button class="filter-btn" data-filter="native">React Native</button>
               <button class="filter-btn" data-filter="react">React.js</button>
@@ -187,6 +188,32 @@
           </div>
 
           <ul class="portfolio-list">
+
+            <li class="portfolio-item-wrap" data-category="next mern react">
+              <div class="portfolio-card" style="background-image: url('./assets/images/portfolio-notebook.png')">
+                <div class="card-glass-overlay"></div>
+                <div class="card-content">
+                  <span class="card-subtitle-pill">Next.js 16 + React 19 + MongoDB</span>
+                  <h3 class="h3 card-title">NoteBook - Keep Your Notes</h3>
+                  <p class="card-description">
+                    Modern digital note-taking platform built with Next.js App Router, Tailwind CSS, & MongoDB. Features secure auth, email OTP password reset, and interactive note management.
+                  </p>
+                  <div class="card-meta">
+                    <span class="client-name">Personal Project</span>
+                    <div class="card-links-group" style="display: flex; gap: 14px; align-items: center;">
+                      <a href="https://github.com/Your-Arun/Notebook---Keep-Your-Notes" target="_blank" class="card-link" aria-label="View Source Code">
+                        <span>GitHub</span>
+                        <ion-icon name="logo-github" aria-hidden="true"></ion-icon>
+                      </a>
+                      <a href="https://ur-notebook.vercel.app/" target="_blank" class="card-link" aria-label="Live Demo">
+                        <span>Live Demo</span>
+                        <ion-icon name="open-outline" aria-hidden="true"></ion-icon>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
 
             <li class="portfolio-item-wrap" data-category="mern native">
               <div class="portfolio-card" style="background-image: url('./portfolio-tenant.jpg')">
@@ -339,6 +366,15 @@
               </div>
               <h3 class="skill-name">React.js</h3>
               <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+            </div>
+
+            <div class="skill-card next-card">
+              <div class="skill-header">
+                <div class="skill-icon"><ion-icon name="layers-outline"></ion-icon></div>
+                <span class="skill-percentage">65%</span>
+              </div>
+              <h3 class="skill-name">Next.js</h3>
+              <div class="skill-bar"><div class="skill-progress" style="width: 65%"></div></div>
             </div>
 
             <div class="skill-card native-card">

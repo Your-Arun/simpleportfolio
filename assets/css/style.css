@@ -1271,6 +1271,13 @@ body.nav-active {
   .react-card:hover .skill-progress,
   .native-card:hover .skill-progress { background: #61dafb; }
 
+  .next-card:hover {
+    box-shadow: 0 10px 30px -10px rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.4);
+  }
+  .next-card:hover .skill-icon { color: #ffffff; }
+  .next-card:hover .skill-progress { background: #ffffff; }
+
   .node-card:hover {
     box-shadow: 0 10px 30px -10px var(--glow-node);
     border-color: rgba(131, 205, 41, 0.35);
